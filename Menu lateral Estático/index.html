@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Estático</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="emoji-picker-1.1.5/lib/css/emoji.css">
+
+
+</head>
+<body>
+    <!--  el menu fijado  -->
+    <header class="hero">
+        <nav class="nav-menu">
+            <div class="nav-user">
+                <figure class="user-img">
+                    <img src="./images/user_img.png" alt="user img">
+                </figure>
+                <a class="user-name" href="#">Jessica Martinez</a>
+            </div>
+            <div class="list-menu">
+                <a class="aside" href=""><i class='bx bxs-home'></i></i>inicio</a>
+                <a class="aside" href=""><i class='bx bx-bell'></i>notificaciones</a>
+                <a class="aside" href=""><i class='bx bx-message-rounded'></i>mensajes</a>
+                <a class="aside" href=""><i class='bx bx-bookmark'></i>guardados</a>
+                <a class="aside" href=""><i class='bx bx-book-reader'></i></i>temas</a>
+                <a class="aside" href=""><i class='bx bx-user-circle'></i>mi pefil</a>
+                <a class="new__publication" href="#subir">Nueva Publicación</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--  el contenido va aquí  -->
+    <main  class="content__main">
+
+        <!-- Sección de Nueva Publicación-->
+        <section id="subir" class="subir-publicacion">
+            <h2>nueva publicación</h2>
+            <div class="emoji-picker-container">
+                <textarea class="form-control textarea-control" placeholder="Describe tu publicación..." data-emojiable="true" rows="10"></textarea>
+                <a href=""><i class='bx bx-send'></i></a>
+            </div>
+            <div class="button">
+                <input type="file" id="file-input" multiple>
+                <button class="buttonSubir" onclick="uploadFiles()">Subir Publicacion</button>
+            </div>
+            <section class="view-archivos">
+                <div id="image-preview"></div>
+                <div id="video-preview"></div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+<script type="text/javascript" src="emoji-picker-1.1.5/lib/js/config.js"></script>
+	<script type="text/javascript" src="emoji-picker-1.1.5/lib/js/util.js"></script>
+	<script type="text/javascript" src="emoji-picker-1.1.5/lib/js/jquery.emojiarea.js"></script>
+	<script type="text/javascript" src="emoji-picker-1.1.5/lib/js/emoji-picker.js"></script>
+</html>
