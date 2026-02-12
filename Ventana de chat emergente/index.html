@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana de Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header__web">
+        <div class="logo">
+            <h1>#TuLogo</h1>
+        </div>
+        <nav>
+            <ul class="nav__menu">
+                <li><a class="list-menu" href="#">Home</a></li>
+                <li><a class="list-menu" href="#">Servicios</a></li>
+                <li><a class="list-menu" href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure class="main__figure">
+            <img src="/images/main_img.svg" alt="main img">
+        </figure>
+        <button class="open__button" onclick="openForm()"><i class="bx bxs-chat"></i> Chat</button>
+        <div class="chat__popup" id="myForm">
+            <form action="#" class="form__container">
+                <h2>Chatea con nosotros</h2>
+                <label for="msg"><b>Mensaje</b></label>
+                <textarea name="msg" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de Suscripción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Nuestros Precios de Suscripción</h1>
+        <div class="toggle">
+            <label for="#">Anual</label>
+            <div class="toggle-btn">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="sub" id="sub">
+                    <div class="circle"></div>
+                </label>
+            </div>
+            <label for="#">Mensual</label>
+        </div>
+    </header>
+    <div class="cards">
+        <div class="card">
+            <ul class="content-card">
+                <li class="plan">Plan Básico</li>
+                <li class="price bottom-bar" id="plan-basico">$119.90</li>
+                <li class="bottom-bar">Calidad de video estándar(SD)</li>
+                <li class="bottom-bar">Una pantalla disponible para <br> ver contenido simultaneamente</li>
+                <li class="bottom-bar">Acceso a la biblioteca completa <br> de películas y series.</li>
+                <li><button class="btn">Suscribirse</button></li>
+            </ul>
+        </div>
+        <div class="card active">
+            <ul class="content-card">
+                <li class="plan">Plan Estándar</li>
+                <li class="price bottom-bar" id="plan-estandar">$167.90</li>
+                <li class="bottom-bar">Calidad de video en HD</li>
+                <li class="bottom-bar">Dos pantallas disponibles para <br> ver contenido simultaneamente</li>
+                <li class="bottom-bar">Acceso a la biblioteca completa <br> de películas y series</li>
+                <li><button class="btn active-btn">Suscribirse</button></li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="content-card">
+                <li class="plan">Plan Premium</li>
+                <li class="price bottom-bar" id="plan-premium">$215.90</li>
+                <li class="bottom-bar">Calidad de video definicion 4K</li>
+                <li class="bottom-bar">Cuatro pantallas disponibles para <br> ver contenido simultaneamente</li>
+                <li class="bottom-bar">Acceso a la biblioteca completa <br> de películas y series</li>
+                <li><button class="btn">Suscribirse</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

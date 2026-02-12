@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("/images/fondo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+}
+.main__container,
+.navigation{
+	bottom: 1.5rem;
+	position: absolute;
+	left: 50%;
+	display: block;
+	margin: 0 auto;
+	transform: translate(-50%, 0);
+}
+.main__container{
+	width: 360px;
+	height: 500px;
+	background-image: url("/images/img-fondo.jpg");
+	background-size: cover;
+	border-radius: 1rem;
+	border: 3px solid #fff;
+	box-shadow: 2px 2px 15px 2px #000;
+}
+.navigation{
+	background-color: purple;
+	border-radius: 2rem;
+}
+.navigation ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.navigation ul li{
+	height: 35px;
+	width: 35px;
+	margin: 1rem;
+	color: #fff;
+	padding: 0 1rem;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .2s linear;
+}
+.navigation ul li:hover{
+	color: #000;
+	transform: scale(1.2);
+	background-color: #fff;
+}
+.navigation ul li:hover i{
+	border-radius: 50%;
+}
+ul li i{
+	font-size: 25px;
+}

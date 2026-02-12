@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing pageen html y css</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-menu">
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo-web">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">Inicio</li>
+                <li class="menu-item">Productos</li>
+                <li class="menu-item">Contactos</li>
+                <li class="menu-item active">Comprar</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="content-1">
+                <h1 class="text">Los mejores <span class="shadow">teléfonos</span> aquí</h1>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt impedit, sapiente itaque officia perspiciatis corporis optio sint magni temporibus iusto nemo ut aut excepturi neque, doloribus autem veritatis quae unde.
+                </p>
+                <a href="#" class="link">Ver más <i class="ri-arrow-right-line"></i></a>
+            </section>
+            <section class="content-2">
+                <div class="clip-path"></div>
+                <div class="select">
+                    <img src="./images/telefono1.png" alt="telefono1" class="image">
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <section class="content-3">
+            <a href="#"><img src="./images/telefono1.png" onclick="imgSlider('images/telefono1.png');"></a>
+            <a href="#"><img src="./images/telefono2.png" onclick="imgSlider('images/telefono2.png');"></a>
+            <a href="#"><img src="./images/telefono3.png" onclick="imgSlider('images/telefono3.png');"></a>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

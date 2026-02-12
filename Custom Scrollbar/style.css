@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 6em;
+    margin: 30px 0;
+}
+.text{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-align: justify;
+    padding: 0 50px;
+}
+
+/*  Custom  Scrollbar  para Google Chrome  */
+
+::-webkit-scrollbar{
+    width: 1.2em;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #0a062c;
+    margin-block: .25em;
+    border-radius: .7em;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right,#857207,  #e6c408);
+    border-radius: 3em;
+}

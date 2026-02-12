@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #1580dc, #406ace, #5a53ba, #6c37a2, #780b86);
+}
+body:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(55% at right 30%);
+    background-image: linear-gradient(to right top, #16ceed, #00baff, #009eff, #4a76ff, #b61eec);
+}
+.main-content{
+    position: relative;
+    display: flex;
+    max-width: 750px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(2, 2, 2, .596);
+}
+.main-content:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    clip-path: circle(65% at right 35%);
+    background-image: linear-gradient(to right top, #ed0f60, #db49ac, #a578e1, #5a99f3, #0fafe7);
+}
+.content.box1{
+    padding: 35px 5px 0 35px;
+}
+.details .description{
+    font-size: 30px;
+    font-weight: 900;
+}
+.details p{
+    color: #524f4f;
+    font-weight: 500;
+    font-size: 13px;
+}
+.price-box{
+    margin-top: 18px;
+}
+.discount{
+    font-size: 20px;
+    margin: 10px 0 0 12px;
+    position: relative;
+    color: #6b0101;
+    text-decoration: line-through;
+}
+.price{
+    color: #2008f0;
+    font-size: 30px;
+}
+.buton1{
+    margin-top: 55px;
+}
+.buton1 button{
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 900;
+    background: #f1ee05;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.buton1 button:hover{
+    transform: scale(1.1);
+}
+.ri-money-dollar-circle-fill{
+    padding-left: 5px;
+    font-size: 20px;
+}
+.content.box2 .image{
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 340px;
+    width: 550px;
+    padding-right: 30px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 27px;
+}
+.image-box .information{
+    margin: 0 35px 0 0;
+}
+.name{
+    font-size: 26px;
+    padding-right: 20px;
+    font-weight: 100;
+    color: #fff;
+    text-transform: uppercase;
+}
+.buton2{
+    margin: 17px 0;
+}
+.buton2 button{
+    outline: none;
+    color: #060249;
+    border: 2px solid #060249;
+    border-radius: 12px;
+    padding: 8px 17px;
+    margin-right: 15px;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buton2 button:hover{
+    background: #5f5abe;
+}

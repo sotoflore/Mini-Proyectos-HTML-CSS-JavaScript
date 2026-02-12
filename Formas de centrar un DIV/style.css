@@ -1,0 +1,28 @@
+.container{
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #000;
+
+    /*display: grid;
+    place-items: center;*/
+
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+
+    position: relative;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #220d44;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

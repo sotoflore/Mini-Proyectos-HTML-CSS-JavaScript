@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/imagenes/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.image-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 10px 2px #fff;
+}
+.img-perfil{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.img-perfil:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+    background: rgba(255,255,255,.3);
+}
+.img-perfil:hover:before{
+    left: -180%;
+}
+.img-perfil img{
+    height: 400px;
+    width: 300px;
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.img-perfil:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.img-perfil h2{
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+    background: rgb(172, 22, 11);
+}
+.img-perfil:hover h2{
+    transform: perspective(400px) rotateY(0deg);
+}
+.img-perfil ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.img-perfil ul li{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform-origin: left;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    background-color: #000;
+}
+.img-perfil:hover ul li{
+    transform: perspective(800px) rotateY(0deg);
+}
+.img-perfil ul li i{
+    font-size: 22px;
+    color: #2ac3ce;
+}
+.img-perfil ul li i:hover{
+    color: #fff;
+}
+.img-perfil:hover ul li:nth-child(1){
+    transition-delay: .2s;
+}
+.img-perfil:hover ul li:nth-child(2){
+    transition-delay: .6s;
+}
+.img-perfil:hover ul li:nth-child(3){
+    transition-delay: .8s;
+}
+.img-perfil:hover ul li:nth-child(4){
+    transition-delay: 1s;
+}

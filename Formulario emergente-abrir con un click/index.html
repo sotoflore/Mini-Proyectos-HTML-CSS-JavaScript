@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Emergente</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>!Bienvenido...!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem voluptas tenetur quis est pariatur nemo, assumenda repellendus at quasi unde dignissimos libero dolor eveniet eos possimus consectetur! Voluptate, et?</p>
+    <button class="open-button" onclick="openForm()">
+        <i class="bx bx-user-plus"></i>
+        <h2>Inicia Sesion Aquí</h2>
+    </button>
+    <div class="form-emergent" id="myForm">
+        <form action="#" class="form-container">
+            <h2>Para Acceder:</h2>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="ingrese su correo electronico" name="email" required>
+            <label for="password"><b>Contraseña</b></label>
+            <input type="password" placeholder="ingrese su contraseña" name="password" required>
+            <a href="#">Olvidé mi contraseña</a>
+            <button class="btn" type="submit">Iniciar Sesión</button>
+            <button class="btn cancel" type="button" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

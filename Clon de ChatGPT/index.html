@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de ChatGPT</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagenes/icono-pestaña-chatgpt.png">
+</head>
+<body>
+    <header class="encabezado">
+        <input type="text" placeholder="+ new chat" id="myInput">
+        <span class="icon__encabezado"><i class="ri-side-bar-line"></i></span>
+    </header>
+
+    <main class="box__content">
+
+        <aside class="sidebar">
+            <div class="sidebar__item">
+                <h3>Hoy</h3>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Crear Tabla de Checklist</a>
+                </div>
+            </div>
+            <div class="sidebar__item">
+                <h3>Ayer</h3>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Temas de Backend</a>
+                </div>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Ruta de Aprendizaje</a>
+                </div>
+            </div>
+            <div class="sidebar__item">
+                <h3>May</h3>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Temas de Frontend</a>
+                </div>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Temas de Diseño Web</a>
+                </div>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Experiencia de Usuario</a>
+                </div>
+                <div class="question">
+                    <span><i class="ri-chat-4-line"></i></span><a href="#">Interfaz de Usuario</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="upgrade__user">
+                <div class="upgrade">
+                    <span><i class="ri-user-3-line"></i>Upgrade to Plus</span>
+                    <span class="new">new</span>
+                </div>
+
+                <div class="user">
+                    <span><i class="ri-file-user-fill"></i></span>
+                    <span class="email">@example.com</span>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">...</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#"><i class="ri-delete-bin-6-line"></i>Clear conversations</a>
+                            <a href="#"><i class="ri-chat-upload-line"></i>Help & FAQ</a>
+                            <a href="#"><i class="ri-settings-2-line"></i>Settings</a>
+                            <hr>
+                            <a href="#"><i class="ri-logout-box-r-line"></i>Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <h1>ChatGPT</h1>
+
+            <div class="content__text">
+                <div class="box">
+                    <i class="ri-sun-line"></i>
+                    <h4>Examples</h4>
+                    <p class="paragraph hover">"Explain quamtum computing in simple terms"</p>
+                    <p class="paragraph hover">"Got any creative ideas for a 10 year old's birthday"</p>
+                    <p class="paragraph hover">"How do I make an HTTP request in Javascript?"</p>
+                </div>
+                <div class="box">
+                    <i class="ri-flashlight-line"></i>
+                    <h4>Capabilities</h4>
+                    <p class="paragraph">Remembers what user said earlier in the conversation</p>
+                    <p class="paragraph">Allows user to provide fllow-up corrections</p>
+                    <p class="paragraph">Trained to decline inappropriate requests</p>
+                </div>
+                <div class="box">
+                    <i class="ri-alert-line"></i>
+                    <h4>Limitations</h4>
+                    <p class="paragraph">May occasionally generate incorrect information</p>
+                    <p class="paragraph">May occasionally produce harmful instructions or biased content</p>
+                    <p class="paragraph">Limited knowledge of world and events after 2021</p>
+                </div>
+            </div>
+
+            <div class="bar__input">
+                <input type="text" placeholder="Send message" id="text__input" onkeyup="checkInput()">
+                <i class="ri-send-plane-2-fill" id="icon__input"></i>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
